@@ -1,0 +1,47 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+some basic resets 
+
+body { 
+  padding: 0; 
+  margin: 0; 
+  font-family: Roboto, sans-serif; 
+  
+}
+
+.container {
+    margin: 20px;
+    display:flex;
+}
+
+.background-primary  {
+  background:  #9575CD;
+}
+
+.text-floral-white {
+  color:floralwhite;
+}
+
+.flex-spacer{
+  flex: auto;
+}
+
+.full-width {
+  width: 100%
+}
+
+.half-width {
+  width: 45%
+}
+
+.form-size {
+  width: 75%
+}
+
+.highlight {
+  border: 1px solid ;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  z-index: 1;
+  transform: scale(1.05);
+}
+

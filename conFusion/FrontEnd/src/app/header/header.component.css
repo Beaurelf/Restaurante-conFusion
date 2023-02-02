@@ -1,0 +1,18 @@
+/*:root{
+--lt-gray: #ddd;
+--background-dark: #512DA8;
+--background-light: #9575CD;
+--background-pale: #D1C4E9;
+}*/
+.menu:hover{
+    color: floralwhite;
+    border-bottom: solid 2px floralwhite;
+}
+.menu-active{
+    border-bottom: solid 2px floralwhite;   
+}
+.jumbotron {
+    background:  #9575CD;
+    color:floralwhite;
+    min-height: 150px;
+}
