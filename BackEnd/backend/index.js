@@ -14,7 +14,7 @@ const dishRouter = require('./routes/dishRouter')
 const promotionRouter = require('./routes/promotionRouter')
 const leaderRouter = require('./routes/leaderRouter')
 const userRouter = require('./routes/userRouter')
-
+const favoriteRouter = require('./routes/favoriteRouter')
 //app.use(cookieParser('12345-67890-09876-54321'))
 app.use(session({
   name: 'session-id',
@@ -33,12 +33,11 @@ mongoose.connect(url)
   console.log('Successful connection')
 }).catch(err => console.log(err))
 
-app.use('/users',userRouter);
-
-
+app.use('/users',userRouter)
 app.use('/dishes',dishRouter)
 app.use('/promotions', promotionRouter)
 app.use('/leaders',leaderRouter)
+app.use('/favorites', favoriteRouter)
 
 
 var port = 3000 || process.env.PORT
